@@ -1,0 +1,64 @@
+.profile {
+    max-width: 384px;
+    width: 100%;
+    background-color: $color-grey-800;
+    border-radius: $border-rad-medium;
+    padding: 40px;
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    &-header {
+        text-align: center;
+
+        &__img {
+
+            & img {
+                border-radius: 50%;
+            }
+        }
+
+        &__title {
+            margin-block: 30px 18px;
+        }
+
+        &__location {
+            font-weight: 700;
+            color: $color-green;
+            padding-bottom: 34px;
+        }
+
+        &__role {
+            margin-bottom: 26px;
+        }
+    }
+
+    &-main {
+
+        &__list {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            font-weight: 700;
+        }
+
+        &__item {
+            background-color: $color-grey-700;
+            border-radius: $border-rad-small;
+            transition: all 0.2s ease-in-out;
+
+            @include hover {
+                background-color: $color-green;
+                color: $color-grey-700;
+            }
+        }
+
+        &__link {
+            display: block;
+            width: inherit;
+            padding: 16px;
+        }
+    }
+}

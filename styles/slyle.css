@@ -1,0 +1,119 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/static/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: Inter;
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  body {
+    padding: 20px;
+  }
+}
+
+.profile {
+  max-width: 384px;
+  width: 100%;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  padding: 40px;
+}
+@media (max-width: 767px) {
+  .profile {
+    padding: 20px;
+  }
+}
+.profile-header {
+  text-align: center;
+}
+.profile-header__img img {
+  border-radius: 50%;
+}
+.profile-header__title {
+  margin-block: 30px 18px;
+}
+.profile-header__location {
+  font-weight: 700;
+  color: hsl(75, 94%, 57%);
+  padding-bottom: 34px;
+}
+.profile-header__role {
+  margin-bottom: 26px;
+}
+.profile-main__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  font-weight: 700;
+}
+.profile-main__item {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .profile-main__item:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+  }
+}
+@media (hover: none) {
+  .profile-main__item:active {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+  }
+}
+.profile-main__link {
+  display: block;
+  width: inherit;
+  padding: 16px;
+}/*# sourceMappingURL=slyle.css.map */
